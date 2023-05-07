@@ -14,7 +14,7 @@ body {
     --color-title: #2E2F42;
     --color-link: #2E2F42;
 }
-
+/* =================== Componets =================== */
 .list {
     list-style: none;
 }
@@ -23,7 +23,19 @@ body {
     text-decoration: none;
 }
 
-/* Header nav */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-title);
+}
+/* =================== /Componets =================== */
+
+/* =================== Header nav =================== */
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -52,11 +64,8 @@ body {
     color: var(--active-link);
 }
 
-.adress {
-    font-style: normal;
-}
-
 .adress-link {
+    font-style: normal;
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -65,7 +74,9 @@ body {
 .adress-link:focus {
     color: var(--active-link);
 }
+/* =================== /Header nav =================== */
 
+/* =================== Hero =================== */
 .hero {
     background-color: #2E2F42;
 }
@@ -94,7 +105,9 @@ body {
 .hero-btn:focus {
     background-color: var(--active-bg-btn);
 }
+/* =================== /Hero =================== */
 
+/* =================== Feature =================== */
 .feature-title {
     font-weight: 500;
     font-size: 20px;
@@ -102,22 +115,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--color-title);
 }
+/* =================== /Feature =================== */
 
-/* .feature-text{
-    letter-spacing: 0.02em;
-} */
-
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--color-title);
-}
-
+/* =================== Team =================== */
 .team-item {
     background-color: #FFF;
 }
@@ -133,7 +133,9 @@ body {
 .team {
     background-color: #F4F4FD;
 }
+/* =================== /Team =================== */
 
+/* =================== Footer =================== */
 .footer {
     background-color: #2E2F42;
 }
@@ -145,7 +147,9 @@ body {
 .footer-text {
     color: #F4F4FD;
 }
+/* =================== /Footer =================== */
 
+/* =================== Portfolio =================== */
 .filter-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -172,3 +176,4 @@ body {
 .app-text{
         color: #434455;
 }
+/* =================== /Portfolio =================== */
