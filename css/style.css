@@ -17,10 +17,14 @@ body {
 /* =================== Componets =================== */
 .list {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .link {
     text-decoration: none;
+
 }
 
 .title {
@@ -33,9 +37,17 @@ body {
     text-transform: capitalize;
     color: var(--color-title);
 }
+.container{
+    width: 1130px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* =================== /Componets =================== */
 
 /* =================== Header nav =================== */
+.header-inner{
+    display: flex;
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -50,7 +62,13 @@ body {
 .header-log-span {
     color: #2E2F42;
 }
-
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
 .menu-link {
     font-weight: 500;
     font-size: 16px;
@@ -63,13 +81,20 @@ body {
 .menu-link:focus {
     color: var(--active-link);
 }
-
+.adress{
+    margin-left: auto;
+}
+.adress-list{
+    display: flex;
+}
 .adress-link {
     font-style: normal;
     letter-spacing: 0.02em;
     color: #434455;
 }
-
+.adress-list > li + li{
+    margin-left: 40px;
+}
 .adress-link:hover,
 .adress-link:focus {
     color: var(--active-link);
