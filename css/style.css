@@ -3,7 +3,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     background: #FFF;
     color: #434455;
 }
@@ -15,16 +14,37 @@ body {
     --color-link: #2E2F42;
 }
 /* =================== Componets =================== */
-.list {
-    list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol{
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
 }
+img{
+    display: block;
+}
+address{
+    font-style: normal;
+}
+button{
+    cursor: pointer;
+}
+.list {
+    list-style: none;
+}
 
 .link {
     text-decoration: none;
-
 }
 
 .title {
@@ -38,9 +58,15 @@ body {
     color: var(--color-title);
 }
 .container{
-    width: 1130px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 /* =================== /Componets =================== */
 
@@ -68,6 +94,10 @@ body {
 }
 .menu{
     display: flex;
+    margin-left: 76px;
+}
+.menu-item:not(:last-child){
+margin-right: 40px;
 }
 .menu-link {
     font-weight: 500;
@@ -88,7 +118,6 @@ body {
     display: flex;
 }
 .adress-link {
-    font-style: normal;
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -104,15 +133,22 @@ body {
 /* =================== Hero =================== */
 .hero {
     background-color: #2E2F42;
+        
 }
-
+.hero-item{
+    text-align: center;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
+
     color: #FFFFFF;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -123,7 +159,8 @@ body {
     letter-spacing: 0.04em;
     color: #FFF;
     background-color: #4D5AE5;
-    cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -133,6 +170,15 @@ body {
 /* =================== /Hero =================== */
 
 /* =================== Feature =================== */
+.features{
+    display: flex;
+}
+.feature-item{
+    width: calc((100% -73px) / 4);
+}
+.feature-item:not(:last-child){
+    margin-right: 24px;
+}
 .feature-title {
     font-weight: 500;
     font-size: 20px;
@@ -142,7 +188,19 @@ body {
 }
 /* =================== /Feature =================== */
 
+/* =================== Our Works =================== */
+.work-list{
+    display: flex;
+}
+/* =================== /Our Works =================== */
+
 /* =================== Team =================== */
+.team {
+    background-color: #F4F4FD;
+}
+.team-list{
+    display: flex;
+}
 .team-item {
     background-color: #FFF;
 }
@@ -155,9 +213,7 @@ body {
     color: var(--color-title);
 }
 
-.team {
-    background-color: #F4F4FD;
-}
+
 /* =================== /Team =================== */
 
 /* =================== Footer =================== */
@@ -183,7 +239,6 @@ body {
     letter-spacing: 0.04em;
     color: #4D5AE5;
     background-color: #F4F4FD;
-    cursor: pointer;
 }
 
 .filter-btn:hover,
@@ -191,14 +246,14 @@ body {
     color: #FFF;
     background-color: var(--active-bg-btn);
 }
-.app-title{
+.portfolio-title{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;    
         color: var(--color-title);
 }
-.app-text{
+.portfolio-text{
         color: #434455;
 }
 /* =================== /Portfolio =================== */
