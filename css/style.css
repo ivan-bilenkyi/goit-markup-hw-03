@@ -10,6 +10,7 @@ body {
   --active-bg-btn: #404bbf;
   --color-title: #2e2f42;
   --color-text: #434455;
+  --margin-gap: 24px;
 }
 /* =================== Componets =================== */
 h1,
@@ -99,6 +100,9 @@ button {
 /* =================== /Componets =================== */
 
 /* =================== Header nav =================== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-inner {
   display: flex;
   align-items: center;
@@ -203,13 +207,13 @@ button {
 
 .features {
   display: flex;
+  gap: var(--margin-gap);
 }
 .feature-item {
   flex-basis: calc((100% -72px) / 4);
 }
 .feature-item:not(:last-child) {
   /* margin-right: 24px; */
-  grid-gap: 24px;
 }
 
 /* =================== /Feature =================== */
@@ -220,7 +224,7 @@ button {
 }
 .work-list {
   display: flex;
-  grid-gap: 24px;
+  gap: var(--margin-gap);
 }
 .work-item {
   flex-basis: calc((100% -48px) / 3);
@@ -236,7 +240,7 @@ button {
 }
 .team-list {
   display: flex;
-  grid-gap: 24px;
+  gap: var(--margin-gap);
 }
 .team-item {
   flex-basis: calc((100% -72px) / 4);
@@ -254,25 +258,6 @@ button {
 }
 /* =================== /Team =================== */
 
-/* =================== Footer =================== */
-.footer {
-  background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.footer-inner {
-  width: 264px;
-}
-.footer-log-span {
-  color: #f4f4fd;
-}
-
-.footer-text {
-  margin-top: 16px;
-  color: #f4f4fd;
-}
-/* =================== /Footer =================== */
-
 /* =================== Portfolio =================== */
 .card-section {
   padding-top: 93px;
@@ -280,12 +265,13 @@ button {
 }
 .filters {
   display: flex;
+  gap: var(--margin-gap);
   justify-content: center;
   margin-bottom: 75px;
 }
 
 .filter-item:not(:last-child) {
-  margin-right: 24px;
+  /* margin-right: 24px; */
 }
 .filter-btn {
   font-family: 'Roboto', sans-serif;
@@ -306,16 +292,38 @@ button {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px var(--margin-gap);
 }
 .card-item {
-  background-color: #ccc;
+  max-width: 360px;
+  flex-basis: calc((100% -48px) / 3);
 }
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid #e7e9fc;
 }
 .card-title {
   margin-bottom: 8px;
 }
 /* =================== /Portfolio =================== */
+
+/* =================== Footer =================== */
+.footer {
+  background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-inner {
+  max-width: 264px;
+}
+.footer-log-span {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  margin-top: 16px;
+  color: #f4f4fd;
+}
+/* =================== /Footer =================== */
