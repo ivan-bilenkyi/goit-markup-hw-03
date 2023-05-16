@@ -12,6 +12,7 @@ body {
   --color-text: #434455;
   --margin-gap: 24px;
   --border-color: #e7e9fc;
+  --hero-bg-btn: #4d5ae5;
 }
 /* =================== Componets =================== */
 h1,
@@ -169,10 +170,7 @@ button {
   padding-top: 188px;
   padding-bottom: 188px;
 }
-.hero-item {
-  text-align: center;
-  margin: 0 auto;
-}
+
 .hero-title {
   max-width: 496px;
   font-size: 56px;
@@ -192,7 +190,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background-color: #4d5ae5;
+  background-color: var(--hero-bg-btn);
   border-radius: 4px;
   padding: 16px 32px;
   margin: 0 auto;
